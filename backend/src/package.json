@@ -10,7 +10,8 @@
     "dev": "nodemon --watch build --watch schema.graphql --exec ts-node ./index.ts",
     "copy_schemas": "cpy **/*schema.graphql ../build/ --parents",
     "build": "tsc -b --incremental",
-    "build_watch": "tsc -b --watch"
+    "build_watch": "tsc -b --watch",
+    "generate_types": "graphql-codegen --config graphql-codegen.yml"
   },
   "keywords": [],
   "author": "",

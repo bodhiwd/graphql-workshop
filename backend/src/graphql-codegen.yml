@@ -1,0 +1,12 @@
+overwrite: true
+schema: ./src/modules/**/*.graphql
+config:
+  # We add the interface prefix to types to avoid name clashes
+  typesPrefix: I
+generates:
+  # Backend typings
+  ../backend/src/interfaces/schema-typings.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-resolvers'
+
