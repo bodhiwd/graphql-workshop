@@ -1,0 +1,21 @@
+type Assignment {
+  id: ID!
+  # A single-line comment
+  name: String!
+  """
+  Multi-line comments are supported here, as well
+  """
+  description: String
+  starts: DateTime!
+  ends: DateTime!
+}
+
+"""
+In GraphQL, inputs are special types to encapsulate complex inputs
+"""
+input AssignmentInput {
+  name: String!
+  description: String
+  starts: DateTime!
+  ends: DateTime!
+}
