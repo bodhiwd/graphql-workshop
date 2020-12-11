@@ -1,0 +1,10 @@
+# All Queries (e.g. not nested resolvers)
+type Query {
+  hello: String
+}
+
+# All mutations
+type Mutation {
+  echo (input: String!): String
+}
+
