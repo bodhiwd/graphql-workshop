@@ -1,5 +1,5 @@
 overwrite: true
-schema: ./src/modules/**/*.graphql
+schema: ./modules/**/*.graphql
 config:
   # We add the interface prefix to types to avoid name clashes
   typesPrefix: I
